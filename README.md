@@ -2,19 +2,17 @@
 
 A skill that makes you design a new project or feature before an agent writes any of it.
 
-The agent interviews you one question at a time and writes your answers to `docs/thinking/`. It does not design for you, and it does not implement until the record is a contract with a go you actually said.
+[![skills.sh](https://skills.sh/b/haroon0x/think)](https://skills.sh/haroon0x/think)
 
 ## Install
 
 ```sh
-git clone https://github.com/haroon0x/think.git
-cd think
-./install.sh
+npx skills add haroon0x/think
 ```
 
-Start a new DeepSeek Harness session and type `/think <your idea>`.
+The CLI puts the skill in your agent's skills folder and links it into the agents it detects. No clone and no shell script.
 
-`./install.sh check` validates the skill and reports install state. `./install.sh uninstall` removes only what it installed.
+Works with agents that load skill folders, including Claude Code, Cursor, Codex, GitHub Copilot, Windsurf, and Gemini. DeepSeek Harness also reads `~/.agents/skills`, where the CLI installs, so the same command works there.
 
 ## What it produces
 
